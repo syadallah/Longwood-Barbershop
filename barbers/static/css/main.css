@@ -1,0 +1,21 @@
+body, html {
+  font-family: 'Playfair Display', serif;
+  height: 100%;
+  width: 100%;
+  background-color: #f8f9fa;
+}
+
+#home {
+  background: url(../img/landingPage.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+.landing-text{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
