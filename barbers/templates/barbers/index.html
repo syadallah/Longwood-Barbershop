@@ -1,0 +1,30 @@
+{% extends "barbers/base.html" %}
+{% load static %}
+
+<!-- Title -->
+
+{% block title %} Longwood Barbershop {% endblock %}
+
+<!-- JavaScript -->
+{% block js %} <script src="{% static 'js/index.js' %}"></script> {% endblock %}
+<!-- Body -->
+{% block body %}
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark border">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/"><span class="text-white">Longwood Barbershop</span></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+                 <li class="nav-link text-light" id="welcome"></li>
+                 <li class="nav-item" id="make-appointment"><a class="nav-link">MAKE APPOINTMENT</a></li>
+                 <li class="nav-item" id="team"><a class="nav-link">Team</a></li>
+                 <li class="nav-item" id="our-services"><a class="nav-link">Our Services</a></li>
+                 <li class="nav-item" id="home"><a class="nav-link">Home</a></li>
+             </ul>
+         </div>
+     </nav>
+{% endblock %}
