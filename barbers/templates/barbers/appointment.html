@@ -9,17 +9,17 @@
 {% block js %} <script src="{% static 'js/appointment.js' %}"></script> {% endblock %}
 {% block body %}
 <!-- Body -->
-<div class="jumbotron jumbotron-fluid">
-  <div class="container-fluid">
-    <h1 class="display-4">Appointment Form</h1>
-    <p class="lead">Make an appointment with us today!!!</p>
-  </div>
-</div>
+
+
 <!-- Form -->
 <div class="container">
   <div class="row">
     <div class="col-md-10 offset-md-1">
       <span class="anchor" id="formComplex"></span>
+      <div id="appointmetForm">
+          <h1 >Appointment Form</h1>
+          <p>Make an appointment with us today!!!</p>
+        </div>
       <hr class="my-5">
 
       <form class="" method="POST" action= "../Includes/signup.inc.php"  onsubmit="return validateForm();" >

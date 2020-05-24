@@ -15,7 +15,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/"><span class="text-white">Longwood Barbershop</span></a>
+    <a class="navbar-brand" href="/"><span>Longwood Barbershop</span></a>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
 
@@ -29,7 +29,7 @@
      </nav>
      <div id="home">
        <div class="landing-text">
-         <h1>Welcome to Longwood Barbershop!</h1>
+         <div id="landing-text">Welcome to Longwood Barbershop!</div>
          <a  class="btn btn-info btn-lg" role="button">Make an Appointment Today!</a>
        </div>
      </div>
@@ -42,7 +42,7 @@
              <img src="{% static 'img/ourServices.jpg' %}" alt="" class="img-fluid">
            </div>
            <div class="col-sm-6">
-             <h3 class="text-center">Services</h3>
+             <h2 class="text-center">Services</h2>
              <p>A hair cut is just a hair cut, right? Wrong! At Longwood, a hair cut is ritual, a nostalgic experience harkening back to a simpler day when men gathered at the corner barbershop to discuss everything from business, to sports, to current events. Longwood’s barbers provide both traditional, short hair cuts, as well as contemporary and trendy styles.</p>
              <ul>
                <li>Quality Mens Haircuts and Hairstyles</li>
@@ -67,16 +67,32 @@
       <img src="{% static 'img/team.jpg' %}" alt="" class="img-fluid">
     </div>
     <div class="col-sm-6">
-      <h3 class="text-center">Our Team</h3>
+      <h2 class="text-center">Our Team</h2>
       <ul>
-        <li>Kadihm M <p>Husband, father, USMC 0311, fantastic barber, & all around good dude. </p> </li>
-        <li>Azad S  <p>I like to do any kind of cut anyone throws at me because I see that it’s a new adventure and the best way to build up my skills and experience in barbering. </p></li>
-        <li>George S  <p>I get it. You want to keep your hair long, but you don’t want to look shaggy. Let me give you the clean cut look, </p>
+        <li>Kadihm M <p>"Husband, father, USMC 0311, fantastic barber, & all around good dude."</p> </li>
+        <li>Azad S  <p>"I like to do any kind of cut anyone throws at me because I see that it’s a new adventure and the best way to build up my skills and experience in barbering."</p></li>
+        <li>George S  <p>"I get it. You want to keep your hair long, but you don’t want to look shaggy. Let me give you the clean cut look,"</p>
        </li>
       </ul>
     </div>
   </div>
   </div>
 </div>
+<footer class="footer">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+              <p>LongWood Barbershop</p>
+              <p>342 Longwood Ave,</p>
+              <p>Boston, MA 02115</p>
+            <p>Phone: (617) 731-7931</p>
+            </div>
 
+    <div class="col-sm-6">
+      <p class="footer-company-name">© 2020 Salim Yadallah</p>
+    </div>
+
+</div>
+</div>
+</footer>
 {% endblock %}

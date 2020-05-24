@@ -1,5 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/05663321f7477456a65e0c363c777377?family=Avenir);
 body, html {
-  font-family: 'Playfair Display', serif;
+  font-family: "Avenir";
   height: 100%;
   width: 100%;
   background-color: #f8f9fa;
@@ -23,13 +24,18 @@ body, html {
 }
 .landing-text{
   color: #f8f9fa;
-  text-shadow: 2px 2px 8px #000;
+  text-shadow: 2px 2px 12px #000;
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+#landing-text{
+  font-size: 4rem;
+  font-weight: bold;
+}
 /* Footer */
 footer {
+  font-size: 0.75rem;
   color: white;
   background-color: #222222;
   padding: 1rem 1rem;
@@ -41,4 +47,11 @@ footer {
 
 .divSection img {
   width: 100%;
+}
+/* jumbotron */
+#appointmetForm{
+  padding: 4rem 0 0 0;
+}
+.col-sm-6 {
+  font-size: 1.2rem;
 }
