@@ -13,7 +13,14 @@ body, html {
   position: relative;
   background-size: cover;
 }
-
+#fixedImg {
+  background: url(../img/fixedImg.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
 .landing-text{
   color: #f8f9fa;
   text-shadow: 2px 2px 8px #000;
