@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'longwood.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dc7e5siuvjijsm',
+        'USER': 'phzwzejxaweght',
+        'PASSWORD': '6e77c63ceb83d8f7db206563d15baec394455c65773cfc27f08729abb1d255e4',
+        'HOST': 'ec2-34-200-72-77.compute-1.amazonaws.com',
+        'PORT': '5432'
     }
 }
 
