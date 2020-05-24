@@ -28,3 +28,9 @@ body, html {
   text-align: center;
   vertical-align: middle;
 }
+/* Footer */
+footer {
+  color: white;
+  background-color: #222222;
+  padding: 1rem 1rem;
+}
