@@ -34,3 +34,11 @@ footer {
   background-color: #222222;
   padding: 1rem 1rem;
 }
+.divSection{
+  padding: 80px 20px;
+
+}
+
+.divSection img {
+  width: 100%;
+}
