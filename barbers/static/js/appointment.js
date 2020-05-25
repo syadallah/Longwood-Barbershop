@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const lname = $('#lname').value;
     const phone = $('#phone').value;
     const email = $('#email').value;
+    const contact = $('#contact').value;
     const barber = $('#barber').value;
     const myDate = $('#myDate').value;
     const time = $('#time').value;
@@ -24,6 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       appointment_data.append('lname', lname);
       appointment_data.append('phone', phone);
       appointment_data.append('email', email);
+      appointment_data.append('contact', contact);
       appointment_data.append('barber', barber);
       appointment_data.append('myDate', myDate);
       appointment_data.append('time', time);

@@ -14,6 +14,7 @@ def appointment(request):
               lname=request.POST.get('lname'),
               phone=request.POST.get('phone'),
               email=request.POST.get('email'),
+              contact=request.POST.get('contact'),
               barber=request.POST.get('barber'),
               date=request.POST.get('myDate'),
               time=request.POST.get('time'),
@@ -28,7 +29,7 @@ def appointment(request):
      }
      return render(request, "barbers/index.html", context)
     else:
-      return HttpResponse('{"success": false, "message": "Invalid username and/or password."}')
+      return HttpResponse('{"success": false, "message": "Invalid input"}')
 
  # GET
   else:
