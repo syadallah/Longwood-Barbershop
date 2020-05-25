@@ -1,7 +1,6 @@
-from typing import Any
-
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.contrib import messages
+from django.shortcuts import render, redirect
 from barbers.models import Appointment
 # Create your views here.
 def index(request):
@@ -24,7 +23,10 @@ def appointment(request):
     add.save()
 
     if add is not None:
-      return HttpResponse('{"success": true, "message": ""}')
+     context = {
+      "client": Appointment.objects.last(),
+     }
+     return render(request, "barbers/index.html", context)
     else:
       return HttpResponse('{"success": false, "message": "Invalid username and/or password."}')
 
