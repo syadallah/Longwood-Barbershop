@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     request.open('POST', '/appointment')
     var csrf_token = $("[name=csrfmiddlewaretoken]").val();
     request.setRequestHeader("X-CSRFToken", csrf_token);
-    console.log(csrf_token)
+
 
     // The FormData() object can be used to transmit data to the server (ie.
       // transmit data to views.py).
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
       appointment_data.append('myDate', myDate);
       appointment_data.append('time', time);
       appointment_data.append('comment', comment);
-      console.log(appointment_data)
 
       // Send register_data (aka FormData()) to views.py, followed by a callback
         // function that executes once a response is received from views.py.
@@ -40,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
           const success = JSON.parse(response)['success'];
           const error_message = JSON.parse(response)['message'];
 
-        console.log(this.responseText);
 
        // If views.py returns a JSON response where success = true, then
        // the page is reloaded in order to redirect the user to index.html.
