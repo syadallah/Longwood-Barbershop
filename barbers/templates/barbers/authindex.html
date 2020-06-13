@@ -9,40 +9,8 @@
 {% block js %} <script src="{% static 'js/login.js' %}"></script> {% endblock %}
 <!-- Body -->
 {% block body %}
-<!-- Navbar -->
-<div id="csrf">{% csrf_token %}</div>
-<div class="collapse" id="navbarHeader">
- <div class="container-fluid text-center">
-   <div class="row no-gutters">
-<!-- Login -->
- <div id="nav-login" class="col-md-5 py-4">
-   <h5>Login</h5>
-   <form>
-     <input id="username" name="username" type="text" placeholder="Username" required><br>
-     <input id="password" name="password" type="password" placeholder="Password" required><br>
-     <button id="submit-login">Login</button>
-   </form>
-   <div class="error-login"></div>
- </div>
 
- <!-- Register -->
- <div id="nav-register" class="col-md-5 ml-md-auto py-4">
-   <h5>New Account</h5>
-   <form>
-     <input id="register-username" name="username" type="text" placeholder="Username" required><br>
-     <input id="register-password" name="password" type="password" placeholder="Password" required><br>
-     <input id="register-first-name" name="first_name" type="text" placeholder="First name" required><br>
-     <input id="register-last-name" name="last_name" type="text" placeholder="Last name" required><br>
-     <input id="register-email" name="email" type="text" placeholder="Email" required><br>
-     <button id="submit-register">Register</button>
-   </form>
-   <div class="error-register"></div>
- </div>
- </div>
- </div>
- </div>
  <!-- Navbar -->
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark border">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -51,20 +19,19 @@
     <span class="navbar-brand">{{ client.fname }} {{client.date}} {{ client.time }}</span>
     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                 <li type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                 <a class="nav-link">Sign In To Make Appointment</a>
-                 </li>
+
                  <li class="nav-link text-light" id="welcome"></li>
                  <li class="nav-item" id="team"><a href="#ourTeam" class="nav-link">Team</a></li>
                  <li class="nav-item" id="our-services"><a href="#ourServices" class="nav-link">Our Services</a></li>
                  <li class="nav-item" id="home-page"><a class="nav-link">Home</a></li>
-
              </ul>
          </div>
+
      </nav>
      <div id="home">
        <div class="landing-text">
          <div id="landing-text">Welcome to Longwood Barbershop!</div>
+         <a  href="{% url 'appointment' %}" class="btn btn-info btn-lg" role="button">Make an Appointment Today!</a>
        </div>
      </div>
 
