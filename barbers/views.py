@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.contrib import messages
+## from django.contrib import messages
 from django.shortcuts import render, redirect
 from barbers.models import Appointment
 from django.contrib.auth.models import User

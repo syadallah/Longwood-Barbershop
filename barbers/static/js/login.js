@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize POST request, extract the CSRF value from the index.html DOM,
     // and put that into the header of the POST request.
     let request = new XMLHttpRequest();
-    request.open('POST', '/authindex');
+    request.open('POST', '/register');
     const csrf_token = document.querySelector('#csrf').childNodes[0]['value'];
 
     request.setRequestHeader("X-CSRFToken", csrf_token);
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
      // Initialize POST request, extract the CSRF value from the index.html DOM,
      // and put that into the header of the POST request.
      const request = new XMLHttpRequest();
-     request.open('POST', '/authindex');
+     request.open('POST', '/login');
      const csrf_token = document.querySelector('#csrf').childNodes[0]['value'];
      request.setRequestHeader("X-CSRFToken", csrf_token);
 
