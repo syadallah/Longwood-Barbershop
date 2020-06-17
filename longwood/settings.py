@@ -26,8 +26,7 @@ SECRET_KEY = 'kro(i%@j5xx+(%qq5jf%n-i-k=4c6r32=ii@wn$-cx5u+x_*ic'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition

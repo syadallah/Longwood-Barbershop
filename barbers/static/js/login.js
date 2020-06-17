@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
        // If views.py returns a JSON response where success = true, then
        // the page is redirected to index.html.
        if (success === true) {
-         window.location.href = '/';
+         window.location.href = '/appointment';
        } else {
          document.querySelector('.error-login').innerHTML = error_message;
        }
