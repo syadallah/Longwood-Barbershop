@@ -10,7 +10,7 @@ It is a website built using Django that features the services for a barbershop c
 
 - Navigate to the ~/project3 folder and run pip3 install -r requirements.txt to make sure that Django is installed -- requirements.txt lists Django==3.0.6
 
-- Start the Django pizza application from within ~/project4 by running:
+- Start the Django Barbershop application from within ~/project4 by running:
 
   $ python manage.py runserver
 
