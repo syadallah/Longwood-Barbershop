@@ -41,12 +41,13 @@ footer {
   padding: 1rem 1rem;
 }
 .divSection{
-  padding: 80px 20px;
+  padding: 40px 20px;
 
 }
 
 .divSection img {
   width: 100%;
+  margin-bottom: 15px;
 }
 /* jumbotron */
 #appointmetForm{
@@ -54,8 +55,7 @@ footer {
 }
 .col-sm-6 {
   font-size: 1.5rem;
-  padding-top: 2rem;
 }
-img {
-  border-radius: 50%;
+strong {
+  margin-top: 5px;
 }
