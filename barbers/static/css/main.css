@@ -17,7 +17,7 @@ body, html {
 #fixedImg {
   background: url(../img/fixedImg.jpg) no-repeat center center fixed;
   display: table;
-  height: 100%;
+  height: 60%;
   position: relative;
   width: 100%;
   background-size: cover;
