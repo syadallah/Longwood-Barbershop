@@ -59,6 +59,6 @@ footer {
 strong {
   margin-top: 5px;
 }
-p {
+p, li {
   font-size: 1rem;
 }
